@@ -10,17 +10,19 @@ function Header({ location }) {
       theme="dark"
     >
       <Menu.Item key="/users">
-          <Link to="/users"><Icon type="bars" />Users</Link>
+        <Link to="/users"><Icon type="bars" />Users</Link>
       </Menu.Item>
       <Menu.Item key="/">
-          <Link to="/"><Icon type="home" />Home</Link>
+        <Link to="/"><Icon type="home" />Home</Link>
       </Menu.Item>
       <Menu.Item key="/404">
-          <Link to="/page-you-dont-know"><Icon type="frown-circle" />404</Link>
+        <Link to="/page-you-dont-know"><Icon type="frown-circle" />404</Link>
       </Menu.Item>
       <Menu.Item key="/antd">
-          <a href="https://github.com/dvajs/dva" target="_blank">dva</a>
+        <a href="https://github.com/dvajs/dva" rel="noopener noreferrer" target="_blank">dva</a>
       </Menu.Item>
     </Menu>
-  )
+  );
 }
+
+export default Header;

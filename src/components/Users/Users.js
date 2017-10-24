@@ -25,7 +25,7 @@ function Users({ dispatch, list: dataSource, loading, total, page: current }) {
     dispatch({
       type: 'user/patch',
       payload: { id, values },
-    })
+    });
   }
 
   const columns = [

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Modal, Form, Input } from 'antd';
-import styles from './UserModal.css';
+//  import styles from './UserModal.css';
 
 const FormItem = Form.Item;
 
@@ -25,7 +25,7 @@ class UserEditModal extends Component {
     });
   }
 
-  okHandler = (e) => {
+  okHandler = () => {
     const { onOk } = this.props;
     this.props.form.validateFields((err, values) => {
       if (!err) {
@@ -89,7 +89,7 @@ class UserEditModal extends Component {
           </Form>
         </Modal>
       </span>
-    )
+    );
   }
 }
 
